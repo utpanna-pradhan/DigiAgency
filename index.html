@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--------------NAV BAR----------->
+<header class="navbar">
+    <div class="container nav-container">
+        <h2 class="logo">DigiAgency</h2>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-button">Get a Quote</button>
+    </div>
+</header>
+
+
+
+    <!------Hero Section---------->
+    <section class="hero">
+        <div class="container hero-flex">
+            <div>
+               <h1>We Help Business Get More Customers Online.</h1>
+               <p>Performance-driven digital marketing that increases traffic, leads, and sales.</p>
+               <button>Get Free Consultation</button>
+            </div>
+            <img src="./images/3270759.jpg" alt="marketing">
+           
+        </div>
+        
+    </section>
+   
+      <section class="stats">
+        <div class="conatiner stats-box">
+            <div>
+                <h2>⭐4.9 </h2>
+                <p>Rating</p>
+            </div>
+
+            <div>
+                <h2>✔100+</h2>
+                <p>Clients</p>
+            </div>
+
+            <div>
+                <h2>🚀200%</h2>
+                <p>Growth</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------------stats-------->
+    <section class="stats">
+        <div class="conatiner stats-box">
+            <div>
+                <h2>120+</h2>
+                <p>Projects Completed</p>
+            </div>
+
+            <div>
+                <h2>98%</h2>
+                <p>Client Satisfaction</p>
+            </div>
+
+            <div>
+                <h2>5+</h2>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------------Service Section -------------->
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3><i class="ri-line-chart-line"></i> SEO Optimization</h3>
+                <p>Improve your website ranking on search engines.</p>
+            </div>
+
+            <div class="card">
+                <h3>📱 Social Media</h3>
+                <p>Engage your audience on all social platforms.</p>
+            </div>
+
+            <div class="card">
+                <h3>💰 Paid Ads</h3>
+                <p>Run high-converting ad campaigns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------------Why choose us ------------>
+    <section class="why">
+        <h2>Why Choose Us</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Fast Results</h3>
+                <p>We focus on quick growth and measurable sucess.</p>
+            </div>
+
+            <div class="card">
+                <h3>Targeted Strategy</h3>
+                <p>Custom plans tailored for your business goals</p>
+            </div>
+
+            <div class="card">
+                <h3>Expert Team</h3>
+                <p>Experienced marketers delivering real ROI.</p>
+            </div>
+        </div>
+
+    </section>
+    <!------------Testimonials ---------------->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+
+        <div class="testimonial-cards">
+
+            <div class="testimonial">
+                <p>"Amazing Service! My business grew 2x."</p>
+                <h4>- John Doe</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Highly recomend this agency !"</p>
+                <h4>- Sarah Lee</h4>
+            </div>
+
+            <div class="testimonial">
+                <p>"Professional and result-driven team."</p>
+                <h4>- Mark Smith</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!---------Contact ------------>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Let's grow your business together</p>
+
+        <form action="" class="contact-form"> 
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" id="" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!----------------CTA------------>
+    <section class="cta">
+        <h2>Ready to Grow Business?</h2>
+        <p>Let's build something amazing together.</p>
+        <button>Start Your Project</button>
+    </section>
+
+
+    <!----------Footer----------->
+    <footer class="footer">
+        <p>@ 2026 DigiAgency. All rights reserved.</p>
+    </footer>
+   
+    <script>
+        const section = document.querySelectorAll("section");
+        window.addEventListener("scroll",()=>{
+            section.forEach(sec =>{
+                const top = sec.getBoundingClientRect().top;
+                if(top < window.innerHeight - 100){
+                    sec.classList.add("show")
+                }
+            })
+        })
+    </script>
+</body>
+</html>
